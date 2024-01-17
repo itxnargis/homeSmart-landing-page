@@ -622,6 +622,14 @@ video {
   right: -8rem;
 }
 
+.-top-3 {
+  top: -0.75rem;
+}
+
+.-top-4 {
+  top: -1rem;
+}
+
 .bottom-8 {
   bottom: 2rem;
 }
@@ -634,6 +642,10 @@ video {
   left: 50%;
 }
 
+.left-2 {
+  left: 0.5rem;
+}
+
 .right-0 {
   right: 0px;
 }
@@ -644,18 +656,6 @@ video {
 
 .top-16 {
   top: 4rem;
-}
-
-.-top-4 {
-  top: -1rem;
-}
-
-.left-2 {
-  left: 0.5rem;
-}
-
-.-top-3 {
-  top: -0.75rem;
 }
 
 .-z-10 {
@@ -726,6 +726,10 @@ video {
   aspect-ratio: 1 / 1;
 }
 
+.h-10 {
+  height: 2.5rem;
+}
+
 .h-14 {
   height: 3.5rem;
 }
@@ -734,16 +738,24 @@ video {
   height: 4rem;
 }
 
-.h-24 {
-  height: 6rem;
-}
-
 .h-6 {
   height: 1.5rem;
 }
 
 .h-8 {
   height: 2rem;
+}
+
+.h-12 {
+  height: 3rem;
+}
+
+.h-5 {
+  height: 1.25rem;
+}
+
+.h-2 {
+  height: 0.5rem;
 }
 
 .w-14 {
@@ -817,17 +829,8 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.-translate-x-1 {
-  --tw-translate-x: -0.25rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .resize-none {
   resize: none;
-}
-
-.resize {
-  resize: both;
 }
 
 .grid-rows-1 {
@@ -914,16 +917,12 @@ video {
   border-radius: 0.125rem;
 }
 
-.border-8 {
-  border-width: 8px;
-}
-
-.border {
-  border-width: 1px;
-}
-
 .border-4 {
   border-width: 4px;
+}
+
+.border-8 {
+  border-width: 8px;
 }
 
 .border-amber-400 {
@@ -941,6 +940,11 @@ video {
   background-color: rgb(251 191 36 / var(--tw-bg-opacity));
 }
 
+.bg-neutral-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(23 23 23 / var(--tw-bg-opacity));
+}
+
 .bg-teal-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(19 78 74 / var(--tw-bg-opacity));
@@ -951,9 +955,9 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-neutral-900 {
+.bg-amber-900 {
   --tw-bg-opacity: 1;
-  background-color: rgb(23 23 23 / var(--tw-bg-opacity));
+  background-color: rgb(120 53 15 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-b {
@@ -1044,6 +1048,11 @@ video {
   color: rgb(251 191 36 / var(--tw-text-opacity));
 }
 
+.text-neutral-500 {
+  --tw-text-opacity: 1;
+  color: rgb(115 115 115 / var(--tw-text-opacity));
+}
+
 .text-neutral-900 {
   --tw-text-opacity: 1;
   color: rgb(23 23 23 / var(--tw-text-opacity));
@@ -1052,16 +1061,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-neutral-50 {
-  --tw-text-opacity: 1;
-  color: rgb(250 250 250 / var(--tw-text-opacity));
-}
-
-.text-neutral-500 {
-  --tw-text-opacity: 1;
-  color: rgb(115 115 115 / var(--tw-text-opacity));
 }
 
 .placeholder-transparent::-moz-placeholder {
@@ -1106,6 +1105,12 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .transition-colors {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1120,12 +1125,6 @@ video {
 
 .transition-shadow {
   transition-property: box-shadow;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.transition-all {
-  transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -1145,10 +1144,6 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.focus\:border:focus {
-  border-width: 1px;
-}
-
 .focus\:border-amber-400:focus {
   --tw-border-opacity: 1;
   border-color: rgb(251 191 36 / var(--tw-border-opacity));
@@ -1157,12 +1152,6 @@ video {
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
-}
-
-.focus\:ring-2:focus {
-  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
 
 .focus\:ring-4:focus {
@@ -1174,10 +1163,6 @@ video {
 .focus\:ring-amber-400:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(251 191 36 / var(--tw-ring-opacity));
-}
-
-.focus\:ring-offset-2:focus {
-  --tw-ring-offset-width: 2px;
 }
 
 .focus-visible\:ring-4:focus-visible {
@@ -1226,11 +1211,6 @@ video {
 
 .peer:focus ~ .peer-focus\:left-2 {
   left: 0.5rem;
-}
-
-.peer:focus ~ .peer-focus\:text-blue-400 {
-  --tw-text-opacity: 1;
-  color: rgb(96 165 250 / var(--tw-text-opacity));
 }
 
 .peer:focus ~ .peer-focus\:text-neutral-600 {
@@ -1433,6 +1413,11 @@ video {
 }
 
 @media (prefers-color-scheme: dark) {
+  .dark\:bg-amber-400 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(251 191 36 / var(--tw-bg-opacity));
+  }
+
   .dark\:bg-neutral-600 {
     --tw-bg-opacity: 1;
     background-color: rgb(82 82 82 / var(--tw-bg-opacity));
@@ -1441,15 +1426,6 @@ video {
   .dark\:bg-neutral-800 {
     --tw-bg-opacity: 1;
     background-color: rgb(38 38 38 / var(--tw-bg-opacity));
-  }
-
-  .dark\:bg-amber-400 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(251 191 36 / var(--tw-bg-opacity));
-  }
-
-  .dark\:to-neutral-900 {
-    --tw-gradient-to: #171717 var(--tw-gradient-to-position);
   }
 
   .dark\:text-neutral-200 {
@@ -1473,21 +1449,16 @@ video {
     --tw-ring-color: rgb(251 191 36 / var(--tw-ring-opacity));
   }
 
-  .dark\:ring-offset-neutral-800 {
-    --tw-ring-offset-color: #262626;
-  }
-
   .dark\:ring-offset-amber-400 {
     --tw-ring-offset-color: #fbbf24;
   }
 
-  .dark\:focus\:ring-offset-2:focus {
-    --tw-ring-offset-width: 2px;
+  .dark\:ring-offset-neutral-800 {
+    --tw-ring-offset-color: #262626;
   }
 
-  .peer:focus ~ .dark\:peer-focus\:text-neutral-600 {
-    --tw-text-opacity: 1;
-    color: rgb(82 82 82 / var(--tw-text-opacity));
+  .dark\:focus\:ring-offset-2:focus {
+    --tw-ring-offset-width: 2px;
   }
 
   .peer:focus ~ .dark\:peer-focus\:text-neutral-300 {
